@@ -1,27 +1,30 @@
 <template>
    <div>
-        <Login v-if="this.$route.path !== '/register' && this.$route.path !== '/homepage'"/>
+       <div v-if="this.$route.path == '/' || this.$route.path == '/login' || this.$route.path == '/register'">
+            <Starter>
+                <router-view />
+            </Starter>
+       </div>
 
-        <component v-else :is="layout">
-            <router-view/>
-        </component>
+        <div v-else>
+            <Portal>
+                <router-view/>
+            </Portal>
+        </div>
 
     </div>
 </template>
 
 <script>
-import Login from "./components/Auth/Login.vue"
+import Portal from "./components/Layouts/Portal.vue";
+import Starter from "./components/Layouts/Starter.vue";
 
 export default {
     name: "App",
     components:{
-      Login,
-    },
-    computed: {
-        layout() {
-            return (this.$route.meta.layout || "Portal") + "Layout";
-        }
-    }
+    Portal,
+    Starter
+},
 }
 </script>
 

@@ -12,16 +12,10 @@ export default [
         meta: { layout: 'Blank' }
     },
     {
-        name: "Homepage",
-        path: '/homepage',
-        component: Login,
-        meta: { layout: 'Blank' }
-        },
-    {
         name: "Register",
         path: '/register',
         component: Register,
-        meta: { layout: 'Blank' }
+        meta: { layout: 'Portal' }
     },
 
   ]

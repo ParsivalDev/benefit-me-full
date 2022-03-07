@@ -1,8 +1,10 @@
 :root {
   --color-background: #181818;
-  --color-text: #fff;
+  --color-text: black;
 }
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *,
 *::before,
 *::after {
