@@ -1,4 +1,4 @@
-# benefit
+# benefit.me
 
 ## Project setup
 ```
