@@ -1,30 +1,32 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+   <div>
+        <Login v-if="this.$route.path !== '/register' && this.$route.path !== '/homepage'"/>
+
+        <component v-else :is="layout">
+            <router-view/>
+        </component>
+
+    </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Login from "./components/Auth/Login.vue"
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+    name: "App",
+    components:{
+      Login,
+    },
+    computed: {
+        layout() {
+            return (this.$route.meta.layout || "Portal") + "Layout";
+        }
     }
-  }
 }
+</script>
+
+<style>
+@import './assets/base.css';
+
+
 </style>
