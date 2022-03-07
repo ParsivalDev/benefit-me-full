@@ -18,13 +18,10 @@
                 </router-link>
             </li>
             <li>
-                <a href="#" class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0" aria-current="page">About</a>
+                <a href="#" class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0" aria-current="page">About us</a>
             </li>
             <li>
                 <a href="#" class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0" aria-current="page">Contact</a>
-            </li>
-            <li>
-                <a href="#" class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0" aria-current="page">Homepage</a>
             </li>
             </ul>
         </div>
