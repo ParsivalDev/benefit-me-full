@@ -6,6 +6,7 @@
         <Footer v-if="$route.path != '/login'" />
 
     </div>
+    
 </template>
 
 <script>
