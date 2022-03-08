@@ -43,11 +43,11 @@
         </div>
         <div class="flex flex-col sm:flex-row space-x-5 w-auto items-center">
                 <router-link to="/login">
-                    <input value="Login" type="button" class="hover:bg-yellow hover:text-black transition duration-300 ease-out  border-2 border-blue text-center mt-3 sm:mt-0 rounded-md bg-blue text-white font-medium px-5 py-1 cursor-pointer">
+                    <input :class="this.$route.path == '/login' ? 'bg-yellow text-slate-900': ''" value="Login" type="button" class="hover:bg-yellow hover:text-black transition duration-300 ease-out  border-2 border-blue text-center mt-3 sm:mt-0 rounded-md bg-blue text-white font-medium px-5 py-1 cursor-pointer">
                 </router-link>
                 <span class="hidden sm:block">or</span>
                 <router-link to="/register">
-                    <input value="Sign up!" type="button" class="hover:bg-yellow hover:text-black transition duration-300 ease-out  border-2 border-blue text-center mt-3 sm:mt-0 rounded-md bg-blue text-white font-medium px-5 py-1 cursor-pointer">
+                    <input :class="this.$route.path == '/register' ? 'bg-yellow text-slate-900': ''" value="Sign up!" type="button" class="hover:bg-yellow hover:text-black transition duration-300 ease-out  border-2 border-blue text-center mt-3 sm:mt-0 rounded-md bg-blue text-white font-medium px-5 py-1 cursor-pointer">
                 </router-link>
             </div>
     </div>
