@@ -1,9 +1,4 @@
 <template>
-    <!-- <div class="flex flex-row gap-6">
-        <router-link to="/"><p>Home</p></router-link>
-        <router-link to="/login"><p>Login</p></router-link>
-        <router-link to="/register"><p>Register</p></router-link>
-    </div> -->
     <nav class="bg-yellow border-gray-200 px-2 sm:px-4 py-2.5 rounded w-full font-big">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
         <router-link to="/" class="flex items-center">
