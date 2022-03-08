@@ -1,6 +1,6 @@
 <template>
    <div>
-       <div v-if="this.$route.path == '/' || this.$route.path == '/login' || this.$route.path == '/register'">
+       <div v-if="this.$route.path == '/' || this.$route.path == '/login' || this.$route.path == '/register' || this.$route.path == '/mission'|| this.$route.path == '/support'">
             <Starter>
                 <router-view />
             </Starter>

@@ -2,7 +2,7 @@
     <div class="flex flex-col items-center min-h-screen w-full h-full mx-auto">
 
         <Navbar />
-            <slot></slot>
+            <slot class=""></slot>
         <Footer />
 
     </div>
