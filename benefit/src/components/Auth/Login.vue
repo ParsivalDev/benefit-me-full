@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-[325px] h-[676px] mx-auto items-center justify-center">
+  <div class="flex flex-col w-[300px] sm:w-[325px] h-[676px] mx-auto items-center justify-center">
 
     <div>
       <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-blue relative inline-block">
@@ -47,7 +47,6 @@
       </form>
 
     </div>
-
 
   </div>
 </template>
