@@ -11,7 +11,7 @@
                 <router-link to="/">
                 <a href="#" class=" block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0" aria-current="page">
                     <span :class="this.$route.path == '/' ? 'before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-blue relative inline-block' : ''">
-                    <span class="hover:border-b-2 hover:border-black" :class="this.$route.path == '/' ?'relative text-white' : 'text-black'">Homepage</span>
+                    <span class="hover:border-b-2 hover:border-black" :class="this.$route.path == '/' ?'relative text-white' : 'text-black'">Homepage </span>
                 </span>
                 </a>
                 </router-link>
@@ -34,17 +34,26 @@
                 </a>
                 </router-link>
             </li>
+            <li>
+                <router-link to="/hot-topic">
+                <a href="#" class=" block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0" aria-current="page">
+                    <span :class="this.$route.path == '/hot-topic' ? 'before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-blue relative inline-block' : ''">
+                    <span class="hover:border-b-2 hover:border-black" :class="this.$route.path == '/hot-topic' ?'relative text-white' : ' text-red-600'">Hot News!🔥</span>
+                </span>
+                </a>
+                </router-link>
+            </li>
             </ul>
         </div>
         <div class="flex flex-col sm:flex-row space-x-5 w-auto items-center">
-                <router-link to="/login">
-                    <input :class="this.$route.path == '/login' ? 'bg-yellow text-slate-900': ''" value="Login" type="button" class="hover:bg-yellow hover:text-black transition duration-300 ease-out  border-2 border-blue text-center mt-3 sm:mt-0 rounded-md bg-blue text-white font-medium px-5 py-1 cursor-pointer">
-                </router-link>
-                <span class="hidden sm:block">or</span>
-                <router-link to="/register">
-                    <input :class="this.$route.path == '/register' ? 'bg-yellow text-slate-900': ''" value="Sign up!" type="button" class="hover:bg-yellow hover:text-black transition duration-300 ease-out  border-2 border-blue text-center mt-3 sm:mt-0 rounded-md bg-blue text-white font-medium px-5 py-1 cursor-pointer">
-                </router-link>
-            </div>
+            <router-link to="/login">
+                <input :class="this.$route.path == '/login' ? 'bg-yellow text-slate-900': ''" value="Login" type="button" class="hover:bg-yellow hover:text-black transition duration-300 ease-out  border-2 border-blue text-center mt-3 sm:mt-0 rounded-md bg-blue text-white font-medium px-5 py-1 cursor-pointer">
+            </router-link>
+            <span class="hidden sm:block">or</span>
+            <router-link to="/register">
+                <input :class="this.$route.path == '/register' ? 'bg-yellow text-slate-900': ''" value="Sign up!" type="button" class="hover:bg-yellow hover:text-black transition duration-300 ease-out  border-2 border-blue text-center mt-3 sm:mt-0 rounded-md bg-blue text-white font-medium px-5 py-1 cursor-pointer">
+            </router-link>
+        </div>
     </div>
     </nav>
 </template>
