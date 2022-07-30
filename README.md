@@ -1,4 +1,4 @@
 
 # in /benefit - frontend
-# in /django - backend (zając please create this catalog)
+# in /backend - backend (Bartoszu please create this directory)
  
