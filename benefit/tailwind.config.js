@@ -12,7 +12,6 @@ module.exports = {
     },
     fontFamily:{
       big: ['Epilogue', 'sans-serif'],
-      sans: ['Noto Sans', 'sans-serif']
     }
   },
   plugins: [],

@@ -1,7 +1,7 @@
 :root {
   /* --color-background: #181818; */
   --color-background: white;
-  --color-text: black;
+  --color-text: white;
 }
 @tailwind base;
 @tailwind components;
@@ -33,9 +33,12 @@ body {
   background: var(--color-background);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 16px;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont;
+  font-size: 14px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.img-background{
+  background-image: url('/src/assets/img/logos/header.png');
 }

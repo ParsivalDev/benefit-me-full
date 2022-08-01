@@ -1,7 +1,7 @@
-import Homepage from '../components/Homepage/Homepage'
-import Mission from '../components/Homepage/Mission'
-import Support from '../components/Homepage/Support'
-import Blog from '../components/Homepage/Blog'
+import Homepage from '../components/Landing/Homepage'
+import Mission from '../components/Landing/Mission'
+import Support from '../components/Landing/Support'
+import Blog from '../components/Landing/Blog'
 export default [
     {
         name: "Homepage",

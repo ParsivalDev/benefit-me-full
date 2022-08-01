@@ -2,12 +2,12 @@
   <div class="flex flex-col w-[300px] sm:w-[325px] h-[676px] mx-auto items-center justify-center">
 
     <div>
-      <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-blue relative inline-block">
-        <span class="text-yellow text-3xl font-bold">Login</span>
+      <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-gradient-to-r from-purple-800 to-pink-500 relative inline-block">
+        <span class="text-3xl font-bold">Login</span>
       </span>
     </div>
     <div class="mt-5 text-center">
-      <span class=" text-base">No account yet? <router-link to="/register"><span class="underline text-blue font-bold">Register now!</span></router-link></span>
+      <span class=" text-base font-medium">No account yet? <router-link to="/register"><span class="underline font-bold">Register now!</span></router-link></span>
     </div>
 
 
@@ -15,19 +15,19 @@
       
         <label for="email_register">
           <div class="flex flex-col justify-start">
-            <span class="text-sm font-semibold text-black mb-1">Email:</span>
-            <input v-model="email" ref="email_register" id="email_register" placeholder="ex. cheaper.OF@gmail.com" class="border-b-2 border-black outline-none text-base" type="email">
+            <span class="text-sm font-semibold mb-1">Email:</span>
+            <input v-model="email" ref="email" id="email" placeholder="ex.: cheaper.OF@gmail.com" class="border-b-2 border-white pb-1 bg-transparent outline-none text-base" type="email">
           </div>
         </label>
 
         <label for="password_register">
           <div class="flex flex-col justify-start mt-5">
-            <span class="text-sm font-semibold text-black mb-1">Password:</span>
-            <input v-model="password" ref="password_register" id="password_register" placeholder="°°°°°°°°" class="border-b-2 border-black outline-none text-base" type="password">
+            <span class="text-sm font-semibold mb-1">Password:</span>
+            <input v-model="password" ref="password" id="password" placeholder="°°°°°°°°°°°°" class="border-b-2 border-white pb-1 bg-transparent outline-none text-base" type="password">
           </div>
         </label>
 
-        <input value="Login" @click="login()" type="submit" class=" text-lg mt-10 w-full hover:bg-yellow hover:text-black transition duration-300 ease-out border-2 border-blue text-center rounded-md bg-blue text-white font-medium px-5 py-1 cursor-pointer">
+        <input value="Login" @click="login()" type="submit" class=" mt-10 font-bold text-lg bg-gradient-to-r from-purple-800 to-green-600 hover:from-purple-800 hover:to-pink-500 text-white py-2 px-5 rounded cursor-pointer transform transition-all hover:scale-105 duration-300 ease-in-out">
 
     </div>
 
